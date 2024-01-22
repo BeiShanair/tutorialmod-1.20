@@ -8,8 +8,8 @@
 		"北山"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/BeiShanair/tutorialmod"
 	},
 	"license": "MIT",
 	"icon": "assets/tutorialmod/icon.png",
