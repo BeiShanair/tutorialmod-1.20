@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.block;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.custom.FireEtherBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -20,6 +21,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block ICE_ETHER_ORE = registerBlocks("ice_ether_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(5f),UniformIntProvider.create(2,5)));
+    public static final Block FIRE_ETHER_BLOCK = registerBlocks("fire_ether_block",
+            new FireEtherBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);
