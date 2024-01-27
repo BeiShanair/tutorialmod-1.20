@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:beetroot"
+    }
+  },
+  "result": {
+    "item": "minecraft:sugar",
+    "count": 3
+  }
+}

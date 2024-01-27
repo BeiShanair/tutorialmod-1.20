@@ -14,6 +14,8 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block ICE_ETHER_BLOCK = registerBlocks("ice_ether_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block RAW_ICE_ETHER_BLOCK =registerBlocks("raw_ice_ether_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);

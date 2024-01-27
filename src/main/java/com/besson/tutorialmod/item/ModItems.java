@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item ICE_ETHER = registerItems("ice_ether",new Item(new FabricItemSettings()));
+    public static final Item RAW_ICE_ETHER = registerItems("raw_ice_ether",new Item(new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
