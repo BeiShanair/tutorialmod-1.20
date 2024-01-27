@@ -20,6 +20,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                         entries.add(ModItems.RAW_ICE_ETHER);
                         entries.add(ModBlocks.ICE_ETHER_ORE);
+                        entries.add(ModItems.PROSPECTOR);
+                        entries.add(ModItems.FIRE_ETHER);
                     }).build());
     public static void registerModItemGroup(){
 
