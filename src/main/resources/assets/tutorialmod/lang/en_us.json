@@ -4,6 +4,7 @@
 
   "block.tutorialmod.ice_ether_block": "Ice Ether Block",
   "block.tutorialmod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "block.tutorialmod.ice_ether_ore": "Ice Ether Ore",
 
   "itemGroup.tutorial_group": "Tutorial Group"
 }
