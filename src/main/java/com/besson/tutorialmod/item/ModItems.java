@@ -18,6 +18,7 @@ public class ModItems {
     public static final Item PROSPECTOR = registerItems("prospector",new Prospector(new FabricItemSettings().maxDamage(64)));
     public static final Item FIRE_ETHER = registerItems("fire_ether",new FireEther(new FabricItemSettings().maxDamage(128)));
     public static final Item CORN =registerItems("corn",new Item(new FabricItemSettings().food(ModFoodComponents.CORN)));
+    public static final Item ANTHRACITE = registerItems("anthracite",new Item(new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
