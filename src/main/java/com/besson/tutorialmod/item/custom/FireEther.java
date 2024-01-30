@@ -4,6 +4,7 @@ import com.besson.tutorialmod.block.ModBlocks;
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -13,10 +14,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class FireEther extends Item {
     public FireEther(Settings settings) {
@@ -71,5 +76,11 @@ public class FireEther extends Item {
             world.setBlockState(blockPos1, blockState2, Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
             world.emitGameEvent((Entity)player, GameEvent.BLOCK_PLACE, blockPos);
         }
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("item.tutorialmod.fire_ether.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }
