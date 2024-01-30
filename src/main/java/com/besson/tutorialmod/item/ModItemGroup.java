@@ -23,6 +23,7 @@ public class ModItemGroup {
                         entries.add(ModItems.PROSPECTOR);
                         entries.add(ModItems.FIRE_ETHER);
                         entries.add(ModBlocks.FIRE_ETHER_BLOCK);
+                        entries.add(ModItems.CORN);
                     }).build());
     public static void registerModItemGroup(){
 
