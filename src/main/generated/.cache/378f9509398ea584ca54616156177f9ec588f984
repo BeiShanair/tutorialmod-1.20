@@ -1,0 +1,5 @@
+// 1.20	2024-02-01T10:35:29.5103016	Tutorial Mod/Block Loot Tables
+9d5c7704d9983f142c40a90636e96cdbc2e01eb2 data\tutorialmod\loot_tables\blocks\ice_ether_block.json
+a2fa2a67505d8f8dd865ab3ef34da74cd73e4372 data\tutorialmod\loot_tables\blocks\ice_ether_ore.json
+06e8dbf1d2100b46e57b1af54e687636f0757ce7 data\tutorialmod\loot_tables\blocks\fire_ether_block.json
+921371bb425e3b2c5b33039e36353de3134c4a1b data\tutorialmod\loot_tables\blocks\raw_ice_ether_block.json
