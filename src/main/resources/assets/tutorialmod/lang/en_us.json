@@ -10,6 +10,15 @@
   "block.tutorialmod.fire_ether_block": "Fire Ether Block",
   "block.tutorialmod.raw_ice_ether_block": "Raw Ice Ether Block",
   "block.tutorialmod.ice_ether_ore": "Ice Ether Ore",
+  "block.tutorialmod.ice_ether_stair": "Ice Ether Stair",
+  "block.tutorialmod.ice_ether_slab": "Ice Ether Slab",
+  "block.tutorialmod.ice_ether_button": "Ice Ether Button",
+  "block.tutorialmod.ice_ether_pressure_plate": "Ice Ether Pressure Plate",
+  "block.tutorialmod.ice_ether_fence": "Ice Ether Fence",
+  "block.tutorialmod.ice_ether_fence_gate": "Ice Ether Fence Gate",
+  "block.tutorialmod.ice_ether_wall": "Ice Ether Wall",
+  "block.tutorialmod.ice_ether_door": "Ice Ether Door",
+  "block.tutorialmod.ice_ether_trapdoor": "Ice Ether Trapdoor",
 
   "itemGroup.tutorial_group": "Tutorial Group",
 

@@ -1,5 +1,12 @@
-// 1.20	2024-02-01T10:35:29.5103016	Tutorial Mod/Block Loot Tables
+// 1.20	2024-02-02T13:58:01.9197961	Tutorial Mod/Block Loot Tables
+f856acdc24b7ee23232ef53a2730f89be45a6fb0 data\tutorialmod\loot_tables\blocks\ice_ether_pressure_plate.json
 9d5c7704d9983f142c40a90636e96cdbc2e01eb2 data\tutorialmod\loot_tables\blocks\ice_ether_block.json
+5215aa3604a66fa37216c55a41081759e8be6783 data\tutorialmod\loot_tables\blocks\ice_ether_stair.json
+666c86893ecc68049f972766034b8b82bc203176 data\tutorialmod\loot_tables\blocks\ice_ether_button.json
+ec781b7d281ce0369f9db553fe63e3f31a23c123 data\tutorialmod\loot_tables\blocks\ice_ether_fence.json
+4a9fa211008dad1727dc66a1cf109e0c84cae82e data\tutorialmod\loot_tables\blocks\ice_ether_fence_gate.json
+80c8a30b787c65f39c88b263cb8f23791ebd8d50 data\tutorialmod\loot_tables\blocks\ice_ether_trapdoor.json
+d287785df7b8c8682de4ab8bdc058e4b27296bbe data\tutorialmod\loot_tables\blocks\ice_ether_wall.json
 a2fa2a67505d8f8dd865ab3ef34da74cd73e4372 data\tutorialmod\loot_tables\blocks\ice_ether_ore.json
 06e8dbf1d2100b46e57b1af54e687636f0757ce7 data\tutorialmod\loot_tables\blocks\fire_ether_block.json
 921371bb425e3b2c5b33039e36353de3134c4a1b data\tutorialmod\loot_tables\blocks\raw_ice_ether_block.json
