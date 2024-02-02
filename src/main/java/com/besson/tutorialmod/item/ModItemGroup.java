@@ -42,6 +42,11 @@ public class ModItemGroup {
                         entries.add(ModItems.FIRE_ETHER_SWORD);
                         entries.add(ModItems.FIRE_ETHER_HOE);
 
+                        entries.add(ModItems.ICE_ETHER_HELMET);
+                        entries.add(ModItems.ICE_ETHER_CHESTPLATE);
+                        entries.add(ModItems.ICE_ETHER_LEGGINGS);
+                        entries.add(ModItems.ICE_ETHER_BOOTS);
+
                     }).build());
     public static void registerModItemGroup(){
 

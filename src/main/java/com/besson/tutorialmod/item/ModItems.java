@@ -28,6 +28,14 @@ public class ModItems {
             new SwordItem(ModToolMaterial.FIRE_ETHER,5,3f,new  FabricItemSettings()));
     public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe",
             new HoeItem(ModToolMaterial.FIRE_ETHER,0,0f,new  FabricItemSettings()));
+    public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet",
+            new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.HELMET,new FabricItemSettings()));
+    public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate",
+            new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.CHESTPLATE,new FabricItemSettings()));
+    public static final Item ICE_ETHER_LEGGINGS = registerItems("ice_ether_leggings",
+            new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
+    public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots",
+            new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.BOOTS,new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
