@@ -6,6 +6,12 @@
   "item.tutorialmod.corn": "Corn",
   "item.tutorialmod.anthracite": "Anthracite",
 
+  "item.tutorialmod.fire_ether_pickaxe": "Fire Ether Pickaxe",
+  "item.tutorialmod.fire_ether_axe": "Fire Ether Axe",
+  "item.tutorialmod.fire_ether_shovel": "Fire Ether Shovel",
+  "item.tutorialmod.fire_ether_sword": "Fire Ether Sword",
+  "item.tutorialmod.fire_ether_hoe": "Fire Ether Hoe",
+
   "block.tutorialmod.ice_ether_block": "Ice Ether Block",
   "block.tutorialmod.fire_ether_block": "Fire Ether Block",
   "block.tutorialmod.raw_ice_ether_block": "Raw Ice Ether Block",
