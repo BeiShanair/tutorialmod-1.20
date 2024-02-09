@@ -2,6 +2,7 @@ package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.item.custom.FireEther;
+import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -29,7 +30,7 @@ public class ModItems {
     public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe",
             new HoeItem(ModToolMaterial.FIRE_ETHER,0,0f,new  FabricItemSettings()));
     public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet",
-            new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.HELMET,new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.HELMET,new FabricItemSettings()));
     public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate",
             new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.CHESTPLATE,new FabricItemSettings()));
     public static final Item ICE_ETHER_LEGGINGS = registerItems("ice_ether_leggings",
