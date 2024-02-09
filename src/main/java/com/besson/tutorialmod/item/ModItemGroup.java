@@ -48,6 +48,7 @@ public class ModItemGroup {
                         entries.add(ModItems.ICE_ETHER_BOOTS);
                         entries.add(ModItems.STRAWBERRY_SEEDS);
                         entries.add(ModItems.STRAWBERRY);
+                        entries.add(ModItems.CORN_SEEDS);
 
                     }).build());
     public static void registerModItemGroup(){

@@ -41,6 +41,8 @@ public class ModItems {
     public static final Item STRAWBERRY =registerItems("strawberry",new Item(new FabricItemSettings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item STRAWBERRY_SEEDS =registerItems("strawberry_seeds",
             new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP,new FabricItemSettings()));
+    public static final Item CORN_SEEDS =registerItems("corn_seeds",
+            new AliasedBlockItem(ModBlocks.CORN_CROP,new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);

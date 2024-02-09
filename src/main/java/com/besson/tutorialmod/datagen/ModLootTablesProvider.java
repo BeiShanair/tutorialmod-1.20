@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.datagen;
 
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -46,6 +47,18 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(StrawberryCropBlock.AGE,5));
         addDrop(ModBlocks.STRAWBERRY_CROP,cropDrops(ModBlocks.STRAWBERRY_CROP,ModItems.STRAWBERRY,ModItems.STRAWBERRY_SEEDS,builder));
+
+        BlockStatePropertyLootCondition.Builder builder1 = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(CornCropBlock.AGE,8));
+        addDrop(ModBlocks.CORN_CROP,cropDrops(ModBlocks.CORN_CROP,ModItems.CORN,ModItems.CORN_SEEDS,builder1));
+
+        /*
+        AnyOfLootCondition.Builder builder2 =
+                BlockStatePropertyLootCondition.builder(ModBlocks.CRON_CROP).properties(StatePredicate.Builder.create()
+                                .exactMatch(CornCropBlock.AGE, 7))
+                        .or(BlockStatePropertyLootCondition.builder(ModBlocks.CRON_CROP).properties(StatePredicate.Builder.create()
+                                .exactMatch(CornCropBlock.AGE, 8)));
+        */
     }
     public LootTable.Builder copperOreLikeDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop,

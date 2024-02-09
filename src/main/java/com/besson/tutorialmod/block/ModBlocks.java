@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.block;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.FireEtherBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -43,6 +44,8 @@ public class ModBlocks {
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque(),BlockSetType.STONE));
     public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"strawberry_crop"),
             new StrawberryCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"corn_crop"),
+            new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);
