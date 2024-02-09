@@ -2,6 +2,7 @@ package com.besson.tutorialmod.block;
 
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.custom.FireEtherBlock;
+import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -40,6 +41,8 @@ public class ModBlocks {
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque(),BlockSetType.STONE));
     public static final Block ICE_ETHER_TRAPDOOR = registerBlocks("ice_ether_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque(),BlockSetType.STONE));
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"strawberry_crop"),
+            new StrawberryCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);

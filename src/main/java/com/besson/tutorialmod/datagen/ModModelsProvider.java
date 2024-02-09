@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.datagen;
 
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -32,6 +33,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.ICE_ETHER_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ICE_ETHER_TRAPDOOR);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, StrawberryCropBlock.AGE,0,1,2,3,4,5);
     }
 
     @Override
@@ -42,6 +45,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CORN,Models.GENERATED);
         itemModelGenerator.register(ModItems.PROSPECTOR,Models.GENERATED);
         itemModelGenerator.register(ModItems.FIRE_ETHER,Models.GENERATED);
+        itemModelGenerator.register(ModItems.STRAWBERRY,Models.GENERATED);
 
         itemModelGenerator.register(ModItems.FIRE_ETHER_PICKAXE,Models.HANDHELD);
         itemModelGenerator.register(ModItems.FIRE_ETHER_AXE,Models.HANDHELD);

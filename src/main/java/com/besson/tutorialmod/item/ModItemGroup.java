@@ -46,6 +46,8 @@ public class ModItemGroup {
                         entries.add(ModItems.ICE_ETHER_CHESTPLATE);
                         entries.add(ModItems.ICE_ETHER_LEGGINGS);
                         entries.add(ModItems.ICE_ETHER_BOOTS);
+                        entries.add(ModItems.STRAWBERRY_SEEDS);
+                        entries.add(ModItems.STRAWBERRY);
 
                     }).build());
     public static void registerModItemGroup(){

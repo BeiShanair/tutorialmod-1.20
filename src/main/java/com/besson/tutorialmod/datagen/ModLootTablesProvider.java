@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.datagen;
 
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -9,12 +10,14 @@ import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModLootTablesProvider extends FabricBlockLootTableProvider {
     public ModLootTablesProvider(FabricDataOutput dataOutput) {
@@ -39,6 +42,10 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICE_ETHER_SLAB,slabDrops(ModBlocks.ICE_ETHER_SLAB));
 
         addDrop(ModBlocks.ICE_ETHER_ORE,copperOreLikeDrops(ModBlocks.ICE_ETHER_ORE,ModItems.RAW_ICE_ETHER));
+
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(StrawberryCropBlock.AGE,5));
+        addDrop(ModBlocks.STRAWBERRY_CROP,cropDrops(ModBlocks.STRAWBERRY_CROP,ModItems.STRAWBERRY,ModItems.STRAWBERRY_SEEDS,builder));
     }
     public LootTable.Builder copperOreLikeDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop,

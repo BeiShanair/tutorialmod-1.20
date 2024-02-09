@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.custom.FireEther;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
@@ -37,6 +38,9 @@ public class ModItems {
             new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
     public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots",
             new ArmorItem(ModArmorMaterial.ICE_ETHER, ArmorItem.Type.BOOTS,new FabricItemSettings()));
+    public static final Item STRAWBERRY =registerItems("strawberry",new Item(new FabricItemSettings().food(ModFoodComponents.STRAWBERRY)));
+    public static final Item STRAWBERRY_SEEDS =registerItems("strawberry_seeds",
+            new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP,new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
