@@ -4,6 +4,7 @@ import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.ModItemGroup;
 import com.besson.tutorialmod.item.ModItems;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
+import com.besson.tutorialmod.util.ModTrades;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifierLootTables();
+		ModTrades.registerTrades();
 
 		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE,2000);
 	}
