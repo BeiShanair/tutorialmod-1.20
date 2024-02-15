@@ -35,5 +35,7 @@
 
   "itemGroup.tutorial_group": "Tutorial Group",
 
+  "entity.minecraft.villager.ice_ether_master": "Ice Ether Master",
+
   "item.tutorialmod.fire_ether.tooltip": "It may make you on fire!"
 }
