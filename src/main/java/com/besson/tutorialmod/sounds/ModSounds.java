@@ -14,6 +14,7 @@ public class ModSounds {
     public static final SoundEvent BLOCK_PLACE = registerSoundEvents("block_place");
     public static final SoundEvent BLOCK_HIT = registerSoundEvents("block_hit");
     public static final SoundEvent BLOCK_FALL = registerSoundEvents("block_fall");
+    public static final SoundEvent HAPPY_NEW_YEAR = registerSoundEvents("happy_new_year");
     public static final BlockSoundGroup BLOCK_SOUND_GROUP = new BlockSoundGroup(1f,1f,
             ModSounds.BLOCK_BREAK,ModSounds.BLOCK_STEP,ModSounds.BLOCK_PLACE,ModSounds.BLOCK_HIT,ModSounds.BLOCK_FALL);
     public static SoundEvent registerSoundEvents(String name){

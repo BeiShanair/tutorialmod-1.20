@@ -34,5 +34,13 @@
     "sounds": [
       "tutorialmod:block_step"
     ]
+  },
+  "happy_new_year": {
+    "sounds": [
+      {
+        "name": "tutorialmod:happy_new_year",
+        "stream": true
+      }
+    ]
   }
 }

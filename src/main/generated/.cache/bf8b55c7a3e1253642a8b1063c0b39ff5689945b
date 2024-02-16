@@ -1,4 +1,4 @@
-// 1.20	2024-02-15T10:28:20.6395263	Tutorial Mod/Model Definitions
+// 1.20	2024-02-16T16:15:28.799769	Tutorial Mod/Model Definitions
 8f322c19ddc2db4ce7e171d77ebb9db5603f651d assets\tutorialmod\models\item\raw_ice_ether.json
 bffb482765941ed0f5d1ebdc91deead34197b921 assets\tutorialmod\blockstates\ice_ether_fence_gate.json
 20c838e70833de9004bf47ea5feb56f6f22df8eb assets\tutorialmod\models\item\ice_ether_helmet_emerald_trim.json
@@ -124,6 +124,7 @@ e3c1ef38f3632c960a26452f06734f8877af0dfd assets\tutorialmod\models\item\ice_ethe
 af2ceebdf60643859cc4b5f207165cf86a04bf40 assets\tutorialmod\models\item\ice_ether_boots_redstone_trim.json
 9034f3575a4c07ce94a29f8333af5f2dbc804621 assets\tutorialmod\models\item\ice_ether_boots_emerald_trim.json
 bf854aeb4489ab43fdb707fdab7ff0b8f04ed176 assets\tutorialmod\models\item\ice_ether_chestplate_quartz_trim.json
+83e5cda88bc0d826ea885f430c9bcb19f12e43c3 assets\tutorialmod\models\item\happy_new_year_music_disc.json
 aae31cd6e30b8d7a7194787e615c6b4cd3b80972 assets\tutorialmod\blockstates\ice_ether_wall.json
 aa754c11f0064668356780e35365a1ea368d3748 assets\tutorialmod\models\item\ice_ether_door.json
 a31d254244420e3751599cfbc5304a9779c2e843 assets\tutorialmod\blockstates\corn_crop.json
@@ -131,8 +132,8 @@ a31d254244420e3751599cfbc5304a9779c2e843 assets\tutorialmod\blockstates\corn_cro
 4cae77c7e238455f06ddfd9e0477ea381c28e779 assets\tutorialmod\models\block\ice_ether_wall_inventory.json
 6126e26da373f9113d9e9be875b14a0d13857444 assets\tutorialmod\models\item\corn.json
 a02c04c508cb42e1aac8a103d66049728a051946 assets\tutorialmod\models\block\ice_ether_slab.json
-6b987dcb708ba503026dd90a2eb6e85aeb6116e1 assets\tutorialmod\models\item\ice_ether_leggings_amethyst_trim.json
 0f4c6f5df2121954f3a0de1eb8e66d8c587fed43 assets\tutorialmod\models\item\strawberry.json
+6b987dcb708ba503026dd90a2eb6e85aeb6116e1 assets\tutorialmod\models\item\ice_ether_leggings_amethyst_trim.json
 adf3043a344147b385d49dc9968cae48ee0542d8 assets\tutorialmod\models\block\ice_ether_stair_inner.json
 531405a57b67d2a8734c8fa32cf57fda99821ecc assets\tutorialmod\models\item\raw_ice_ether_block.json
 41a3337f62f18738eb3f6183d868792e853b94b1 assets\tutorialmod\models\block\corn_crop_stage1.json

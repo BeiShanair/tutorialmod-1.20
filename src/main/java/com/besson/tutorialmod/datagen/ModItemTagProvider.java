@@ -17,5 +17,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ICE_ETHER_HELMET,ModItems.ICE_ETHER_CHESTPLATE,ModItems.ICE_ETHER_LEGGINGS,ModItems.ICE_ETHER_BOOTS);
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.HAPPY_NEW_YEAR_MUSIC_DISC);
     }
 }

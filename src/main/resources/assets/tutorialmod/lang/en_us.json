@@ -44,5 +44,8 @@
   "sounds.tutorialmod.block_fall": "Block Fall",
   "sounds.tutorialmod.block_hit": "Block Hit",
   "sounds.tutorialmod.block_place": "Block Place",
-  "sounds.tutorialmod.block_step": "Block Step"
+  "sounds.tutorialmod.block_step": "Block Step",
+
+  "item.tutorialmod.happy_new_year_music_disc": "World Asian Carnival China Traditional Music Travel",
+  "item.tutorialmod.happy_new_year_music_disc.desc": "SoundGalleryBy - World Asian Carnival China Traditional Music Travel (CC0)"
 }

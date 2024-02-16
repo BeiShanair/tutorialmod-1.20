@@ -5,6 +5,7 @@ import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.custom.FireEther;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
+import com.besson.tutorialmod.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -43,6 +44,8 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP,new FabricItemSettings()));
     public static final Item CORN_SEEDS =registerItems("corn_seeds",
             new AliasedBlockItem(ModBlocks.CORN_CROP,new FabricItemSettings()));
+    public static final Item HAPPY_NEW_YEAR_MUSIC_DISC = registerItems("happy_new_year_music_disc",
+            new MusicDiscItem(7, ModSounds.HAPPY_NEW_YEAR,new FabricItemSettings().maxCount(1),144));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);

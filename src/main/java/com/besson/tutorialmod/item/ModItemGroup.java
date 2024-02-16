@@ -50,6 +50,8 @@ public class ModItemGroup {
                         entries.add(ModItems.STRAWBERRY);
                         entries.add(ModItems.CORN_SEEDS);
 
+                        entries.add(ModItems.HAPPY_NEW_YEAR_MUSIC_DISC);
+
                     }).build());
     public static void registerModItemGroup(){
 
