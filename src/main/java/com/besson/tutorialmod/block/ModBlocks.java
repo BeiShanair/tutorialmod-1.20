@@ -4,6 +4,7 @@ import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.FireEtherBlock;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
+import com.besson.tutorialmod.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -22,7 +23,7 @@ public class ModBlocks {
     public static final Block ICE_ETHER_ORE = registerBlocks("ice_ether_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(5f),UniformIntProvider.create(2,5)));
     public static final Block FIRE_ETHER_BLOCK = registerBlocks("fire_ether_block",
-            new FireEtherBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+            new FireEtherBlock(FabricBlockSettings.copyOf(Blocks.STONE).sounds(ModSounds.BLOCK_SOUND_GROUP)));
     public static final Block ICE_ETHER_STAIR = registerBlocks("ice_ether_stair",
             new StairsBlock(ModBlocks.ICE_ETHER_BLOCK.getDefaultState(),FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block ICE_ETHER_SLAB = registerBlocks("ice_ether_slab",

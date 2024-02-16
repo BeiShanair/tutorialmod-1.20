@@ -3,6 +3,7 @@ package com.besson.tutorialmod;
 import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.ModItemGroup;
 import com.besson.tutorialmod.item.ModItems;
+import com.besson.tutorialmod.sounds.ModSounds;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
 import com.besson.tutorialmod.util.ModTrades;
 import com.besson.tutorialmod.villager.ModVillagers;
@@ -26,6 +27,7 @@ public class TutorialMod implements ModInitializer {
 		ModTrades.registerTrades();
 
 		ModVillagers.registerVillagers();
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE,2000);
 	}

@@ -1,0 +1,38 @@
+{
+  "prospector_call": {
+    "subtitle": "sounds.tutorialmod.prospector_call",
+    "sounds": [
+      "tutorialmod:prospector_call"
+    ]
+  },
+  "block_break": {
+    "subtitle": "sounds.tutorialmod.block_break",
+    "sounds": [
+      "tutorialmod:block_break"
+    ]
+  },
+  "block_fall": {
+    "subtitle": "sounds.tutorialmod.block_fall",
+    "sounds": [
+      "tutorialmod:block_fall"
+    ]
+  },
+  "block_hit": {
+    "subtitle": "sounds.tutorialmod.block_hit",
+    "sounds": [
+      "tutorialmod:block_hit"
+    ]
+  },
+  "block_place": {
+    "subtitle": "sounds.tutorialmod.block_place",
+    "sounds": [
+      "tutorialmod:block_place"
+    ]
+  },
+  "block_step": {
+    "subtitle": "sounds.tutorialmod.block_step",
+    "sounds": [
+      "tutorialmod:block_step"
+    ]
+  }
+}

@@ -37,5 +37,12 @@
 
   "entity.minecraft.villager.ice_ether_master": "Ice Ether Master",
 
-  "item.tutorialmod.fire_ether.tooltip": "It may make you on fire!"
+  "item.tutorialmod.fire_ether.tooltip": "It may make you on fire!",
+
+  "sounds.tutorialmod.prospector_call": "Prospector Notice",
+  "sounds.tutorialmod.block_break": "Block Break",
+  "sounds.tutorialmod.block_fall": "Block Fall",
+  "sounds.tutorialmod.block_hit": "Block Hit",
+  "sounds.tutorialmod.block_place": "Block Place",
+  "sounds.tutorialmod.block_step": "Block Step"
 }
