@@ -1,8 +1,10 @@
 package com.besson.tutorialmod;
 
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.block.entity.ModBlockEntities;
 import com.besson.tutorialmod.item.ModItemGroup;
 import com.besson.tutorialmod.item.ModItems;
+import com.besson.tutorialmod.screen.ModScreenHandlers;
 import com.besson.tutorialmod.sounds.ModSounds;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
 import com.besson.tutorialmod.util.ModTrades;
@@ -28,6 +30,9 @@ public class TutorialMod implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
+
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE,2000);
 	}

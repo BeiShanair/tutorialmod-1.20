@@ -52,6 +52,8 @@ public class ModItemGroup {
 
                         entries.add(ModItems.HAPPY_NEW_YEAR_MUSIC_DISC);
 
+                        entries.add(ModBlocks.POLISHING_MACHINE);
+
                     }).build());
     public static void registerModItemGroup(){
 

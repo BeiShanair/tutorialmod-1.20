@@ -3,6 +3,7 @@ package com.besson.tutorialmod.block;
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.custom.CornCropBlock;
 import com.besson.tutorialmod.block.custom.FireEtherBlock;
+import com.besson.tutorialmod.block.custom.PolishingMachine;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -47,6 +48,8 @@ public class ModBlocks {
             new StrawberryCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"corn_crop"),
             new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block POLISHING_MACHINE = registerBlocks("polishing_machine",
+            new PolishingMachine(FabricBlockSettings.copyOf(Blocks.STONE)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);
