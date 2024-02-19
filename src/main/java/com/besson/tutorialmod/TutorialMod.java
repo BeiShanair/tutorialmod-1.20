@@ -4,6 +4,7 @@ import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.block.entity.ModBlockEntities;
 import com.besson.tutorialmod.item.ModItemGroup;
 import com.besson.tutorialmod.item.ModItems;
+import com.besson.tutorialmod.recipe.ModRecipes;
 import com.besson.tutorialmod.screen.ModScreenHandlers;
 import com.besson.tutorialmod.sounds.ModSounds;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
@@ -33,6 +34,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModRecipes.registerRecipes();
 
 		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE,2000);
 	}
