@@ -122,11 +122,11 @@ public class PolishingMachineBlockEntity extends BlockEntity implements Extended
     }
 
     private void craftItem() {
-        this.removeStack(INPUT_SLOT,1);
         Optional<PolishingMachineRecipe> recipe = getCurrentRecipe();
 
         this.setStack(OUTPUT_SLOT,new ItemStack(recipe.get().getOutput(null).getItem(),
                 getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
+        this.removeStack(INPUT_SLOT,1);
     }
 
     private boolean hasCraftingFinished() {
