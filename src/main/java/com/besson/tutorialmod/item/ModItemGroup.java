@@ -54,6 +54,8 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.POLISHING_MACHINE);
 
+                        entries.add(ModItems.TIGER_SPAWN_EGG);
+
                     }).build());
     public static void registerModItemGroup(){
 

@@ -1,6 +1,6 @@
-// 1.20	2024-02-17T12:11:18.9292495	Tutorial Mod/Tags for minecraft:block
-6594795e343a0735ffeed65007f8302fe6eefc6b data\minecraft\tags\blocks\walls.json
+// 1.20	2024-02-21T09:51:12.657504	Tutorial Mod/Tags for minecraft:block
 7d2d23a1205b470cb0bf371376bb0bd61747008d data\tutorialmod\tags\blocks\prospector_list.json
+6594795e343a0735ffeed65007f8302fe6eefc6b data\minecraft\tags\blocks\walls.json
 da0c8afadbc3b0594ff3355cbf4785e7c875b347 data\minecraft\tags\blocks\mineable\pickaxe.json
 7c2f7d0466e52c396756c1ed4a61216de16caf09 data\minecraft\tags\blocks\needs_iron_tool.json
 f73b2ddce5db4133eaa9b3aa403f51a2f5e3319b data\minecraft\tags\blocks\fence_gates.json

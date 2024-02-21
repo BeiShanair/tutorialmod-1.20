@@ -2,6 +2,7 @@ package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
 import com.besson.tutorialmod.block.ModBlocks;
+import com.besson.tutorialmod.entity.ModEntities;
 import com.besson.tutorialmod.item.custom.FireEther;
 import com.besson.tutorialmod.item.custom.ModArmorItem;
 import com.besson.tutorialmod.item.custom.Prospector;
@@ -46,6 +47,8 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.CORN_CROP,new FabricItemSettings()));
     public static final Item HAPPY_NEW_YEAR_MUSIC_DISC = registerItems("happy_new_year_music_disc",
             new MusicDiscItem(7, ModSounds.HAPPY_NEW_YEAR,new FabricItemSettings().maxCount(1),144));
+    public static final Item TIGER_SPAWN_EGG = registerItems("tiger_spawn_egg",
+            new SpawnEggItem(ModEntities.TIGER,0xa86518,0x3b260f,new FabricItemSettings()));
 
     private static void addItemsToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ICE_ETHER);
