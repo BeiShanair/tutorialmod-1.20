@@ -1,18 +1,22 @@
 package com.besson.tutorialmod.entity.client;
 
+import com.besson.tutorialmod.entity.animation.TigerAnimation;
 import com.besson.tutorialmod.entity.custom.TigerEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.MathHelper;
 
 // Made with Blockbench 4.9.3
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
 public class TigerModel<T extends TigerEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart tiger;
+	private final ModelPart head;
 	public TigerModel(ModelPart root) {
 		this.tiger = root.getChild("tiger");
+		this.head = tiger.getChild("head");
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
@@ -38,7 +42,20 @@ public class TigerModel<T extends TigerEntity> extends SinglePartEntityModel<T> 
 	}
 	@Override
 	public void setAngles(TigerEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.getPart().traverse().forEach(ModelPart::resetTransform);
+		this.setHeadAngles(netHeadYaw,headPitch);
+
+		this.animateMovement(TigerAnimation.WALK,limbSwing,limbSwingAmount,2f,2.5f);
+		this.updateAnimation(entity.idleAnimationState,TigerAnimation.IDLE,ageInTicks,1f);
 	}
+
+	private void setHeadAngles(float headAngles, float headPitch) {
+		headAngles = MathHelper.clamp(headAngles,-30.0F,30.0F);
+		headPitch = MathHelper.clamp(headPitch, -25.0F, 45.0F);
+		this.head.yaw = headAngles * 0.017453292F;
+		this.head.pitch = headPitch * 0.017453292F;
+	}
+
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
 		tiger.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);

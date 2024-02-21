@@ -1,6 +1,8 @@
 package com.besson.tutorialmod.entity.custom;
 
 import com.besson.tutorialmod.entity.ModEntities;
+import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -17,6 +19,17 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class TigerEntity extends AnimalEntity {
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeOut = 0;
+
+    private void setUpAnimationState(){
+        if (this.idleAnimationTimeOut <= 0){
+            this.idleAnimationTimeOut = this.random.nextInt(40) + 80;
+            this.idleAnimationState.start(this.age);
+        }else {
+            --this.idleAnimationTimeOut;
+        }
+    }
     public TigerEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -24,6 +37,15 @@ public class TigerEntity extends AnimalEntity {
     @Override
     public void tick() {
         super.tick();
+        if (this.getWorld().isClient()){
+            setUpAnimationState();
+        }
+    }
+
+    @Override
+    protected void updateLimbs(float posDelta) {
+        float f = this.getPose() == EntityPose.STANDING ? Math.min(posDelta * 6.0f,1.0f) :0.0f;
+        this.limbAnimator.updateLimbs(f,0.2f);
     }
 
     @Override
