@@ -1,4 +1,4 @@
-// 1.20	2024-02-21T09:51:12.6559971	Tutorial Mod/Model Definitions
+// 1.20	2024-02-22T10:39:44.7549533	Tutorial Mod/Model Definitions
 8f322c19ddc2db4ce7e171d77ebb9db5603f651d assets\tutorialmod\models\item\raw_ice_ether.json
 bffb482765941ed0f5d1ebdc91deead34197b921 assets\tutorialmod\blockstates\ice_ether_fence_gate.json
 20c838e70833de9004bf47ea5feb56f6f22df8eb assets\tutorialmod\models\item\ice_ether_helmet_emerald_trim.json
@@ -61,8 +61,8 @@ ce0fb17dcd9810d4f5cfdfd93a61a8a77a1ad9a5 assets\tutorialmod\models\item\polishin
 50bbebb4b891a4bbf8b03f274e70f810abbbf967 assets\tutorialmod\models\item\ice_ether_button.json
 e68789011afede5a84a342053df4da4214ad9414 assets\tutorialmod\models\item\ice_ether_helmet_netherite_trim.json
 c1d93274316a629398ff1352788325c6b102423a assets\tutorialmod\models\block\ice_ether_fence_gate_wall.json
-6c004e3de5a45f480f3738c83348a1b3a5cf2b00 assets\tutorialmod\models\block\ice_ether_door_top_left_open.json
 511ca2acda508aba33110458010a081dfc6aa30e assets\tutorialmod\models\item\anthracite.json
+6c004e3de5a45f480f3738c83348a1b3a5cf2b00 assets\tutorialmod\models\block\ice_ether_door_top_left_open.json
 37f9ad8e408f4df80840554eb029be0e61b102d8 assets\tutorialmod\models\item\ice_ether_chestplate.json
 634390f9ef2b006f97befe3aace1cc6ed39389cb assets\tutorialmod\models\item\ice_ether_leggings_copper_trim.json
 429d5891cd4d1d57695f92608f83dae3a3b36a16 assets\tutorialmod\models\item\ice_ether_helmet_redstone_trim.json

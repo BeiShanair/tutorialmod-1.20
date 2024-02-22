@@ -12,6 +12,7 @@ import com.besson.tutorialmod.sounds.ModSounds;
 import com.besson.tutorialmod.util.ModLootTableModifiers;
 import com.besson.tutorialmod.util.ModTrades;
 import com.besson.tutorialmod.villager.ModVillagers;
+import com.besson.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -39,6 +40,8 @@ public class TutorialMod implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 
 		ModRecipes.registerRecipes();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE,2000);
 

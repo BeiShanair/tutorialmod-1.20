@@ -1,8 +1,12 @@
 package com.besson.tutorialmod;
 
 import com.besson.tutorialmod.datagen.*;
+import com.besson.tutorialmod.world.ModConfiguredFeatures;
+import com.besson.tutorialmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,6 +19,13 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTablesProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(ModPoiTagsProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
 
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::boostrap);
 	}
 }
