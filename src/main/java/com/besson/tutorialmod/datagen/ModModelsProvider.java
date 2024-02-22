@@ -43,6 +43,11 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CornCropBlock.AGE,0,1,2,3,4,5,6,7,8);
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.POLISHING_MACHINE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.ICE_ETHER_LOG).log(ModBlocks.ICE_ETHER_LOG).wood(ModBlocks.ICE_ETHER_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ICE_ETHER_LOG).log(ModBlocks.STRIPPED_ICE_ETHER_LOG).wood(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_LEAVES);
     }
 
     @Override

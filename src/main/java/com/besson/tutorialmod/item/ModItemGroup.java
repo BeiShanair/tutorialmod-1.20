@@ -56,6 +56,13 @@ public class ModItemGroup {
 
                         entries.add(ModItems.TIGER_SPAWN_EGG);
 
+                        entries.add(ModBlocks.ICE_ETHER_LOG);
+                        entries.add(ModBlocks.ICE_ETHER_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ICE_ETHER_LOG);
+                        entries.add(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+                        entries.add(ModBlocks.ICE_ETHER_PLANKS);
+                        entries.add(ModBlocks.ICE_ETHER_LEAVES);
+
                     }).build());
     public static void registerModItemGroup(){
 

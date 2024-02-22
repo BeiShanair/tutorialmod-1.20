@@ -50,6 +50,18 @@ public class ModBlocks {
             new CornCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block POLISHING_MACHINE = registerBlocks("polishing_machine",
             new PolishingMachine(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block ICE_ETHER_LOG = registerBlocks("ice_ether_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block ICE_ETHER_WOOD = registerBlocks("ice_ether_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_ICE_ETHER_LOG = registerBlocks("stripped_ice_ether_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_ICE_ETHER_WOOD = registerBlocks("stripped_ice_ether_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block ICE_ETHER_PLANKS = registerBlocks("ice_ether_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block ICE_ETHER_LEAVES = registerBlocks("ice_ether_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);

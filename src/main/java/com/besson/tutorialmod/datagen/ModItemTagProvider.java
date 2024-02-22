@@ -1,5 +1,6 @@
 package com.besson.tutorialmod.datagen;
 
+import com.besson.tutorialmod.block.ModBlocks;
 import com.besson.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -19,5 +20,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ICE_ETHER_HELMET,ModItems.ICE_ETHER_CHESTPLATE,ModItems.ICE_ETHER_LEGGINGS,ModItems.ICE_ETHER_BOOTS);
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.HAPPY_NEW_YEAR_MUSIC_DISC);
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ICE_ETHER_LOG.asItem())
+                .add(ModBlocks.ICE_ETHER_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_ICE_ETHER_LOG.asItem())
+                .add(ModBlocks.STRIPPED_ICE_ETHER_WOOD.asItem());
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.ICE_ETHER_PLANKS.asItem());
     }
 }
