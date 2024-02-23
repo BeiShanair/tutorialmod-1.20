@@ -34,6 +34,13 @@
   "block.tutorialmod.ice_ether_door": "Ice Ether Door",
   "block.tutorialmod.ice_ether_trapdoor": "Ice Ether Trapdoor",
   "block.tutorialmod.polishing_machine": "Polishing Machine",
+  "block.tutorialmod.ice_ether_log": "Ice Ether Log",
+  "block.tutorialmod.ice_ether_wood": "Ice Ether Wood",
+  "block.tutorialmod.stripped_ice_ether_log": "Stripped Ice Ether Log",
+  "block.tutorialmod.stripped_ice_ether_wood": "Stripped Ice Ether Wood",
+  "block.tutorialmod.ice_ether_planks": "Ice Ether Planks",
+  "block.tutorialmod.ice_ether_leaves": "Ice Ether Leaves",
+  "block.tutorialmod.ice_ether_tree_sapling": "Ice Ether Tree Sapling",
 
   "itemGroup.tutorial_group": "Tutorial Group",
 

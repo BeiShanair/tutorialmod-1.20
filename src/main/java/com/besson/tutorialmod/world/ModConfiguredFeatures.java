@@ -11,10 +11,12 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
@@ -22,6 +24,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> ICE_ETHER_ORE_KEY = registerKey("ice_ether_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_ICE_ETHER_ORE_KEY = registerKey("nether_ice_ether_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> END_ICE_ETHER_ORE_KEY = registerKey("end_ice_ether_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> ICE_ETHER_TREE_KEY = registerKey("ice_ether_tree");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stonePlace = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -40,6 +43,14 @@ public class ModConfiguredFeatures {
         register(context,ICE_ETHER_ORE_KEY,Feature.ORE,new OreFeatureConfig(overWorld,12));
         register(context,NETHER_ICE_ETHER_ORE_KEY,Feature.ORE,new OreFeatureConfig(nether,12));
         register(context,END_ICE_ETHER_ORE_KEY,Feature.ORE,new OreFeatureConfig(end,12));
+
+        register(context,ICE_ETHER_TREE_KEY,Feature.TREE,new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ICE_ETHER_LOG),
+                new StraightTrunkPlacer(4,3,2),
+                BlockStateProvider.of(ModBlocks.ICE_ETHER_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(4),ConstantIntProvider.create(2),2),
+                new TwoLayersFeatureSize(1,0,2)
+        ).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

@@ -63,6 +63,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ICE_ETHER_PLANKS);
                         entries.add(ModBlocks.ICE_ETHER_LEAVES);
 
+                        entries.add(ModBlocks.ICE_ETHER_TREE_SAPLING);
+
                     }).build());
     public static void registerModItemGroup(){
 

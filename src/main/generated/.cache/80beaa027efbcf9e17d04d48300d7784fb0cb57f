@@ -1,11 +1,11 @@
-// 1.20	2024-02-22T12:57:43.477547	Tutorial Mod/Tags for minecraft:block
+// 1.20	2024-02-23T10:16:31.940707	Tutorial Mod/Tags for minecraft:block
 6594795e343a0735ffeed65007f8302fe6eefc6b data\minecraft\tags\blocks\walls.json
 7d2d23a1205b470cb0bf371376bb0bd61747008d data\tutorialmod\tags\blocks\prospector_list.json
 da0c8afadbc3b0594ff3355cbf4785e7c875b347 data\minecraft\tags\blocks\mineable\pickaxe.json
 7c2f7d0466e52c396756c1ed4a61216de16caf09 data\minecraft\tags\blocks\needs_iron_tool.json
 f73b2ddce5db4133eaa9b3aa403f51a2f5e3319b data\minecraft\tags\blocks\fence_gates.json
-0bfa34a0d1522fa6d9de2257bbe8a3eec8be3e06 data\minecraft\tags\blocks\needs_stone_tool.json
 fed6b5368f9ac2d6673baa42557633cfecc51b9e data\fabric\tags\blocks\needs_tool_level_4.json
+0bfa34a0d1522fa6d9de2257bbe8a3eec8be3e06 data\minecraft\tags\blocks\needs_stone_tool.json
 6e0031b4cc3bdd65f8c9f6be6dba94a6a8b1493d data\minecraft\tags\blocks\fences.json
 0d8f0fa47521f4f5ef9dd34ee3f82e88adf79a09 data\minecraft\tags\blocks\needs_diamond_tool.json
 1f7cbaca51d2406ff9e819b6305fbfa57465c538 data\minecraft\tags\blocks\logs_that_burn.json

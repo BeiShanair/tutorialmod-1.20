@@ -45,7 +45,9 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
         addDrop(ModBlocks.ICE_ETHER_PLANKS);
 
-        addDrop(ModBlocks.ICE_ETHER_LEAVES,leavesDrops(ModBlocks.ICE_ETHER_LEAVES,ModBlocks.ICE_ETHER_SLAB,0.0025f));
+        addDrop(ModBlocks.ICE_ETHER_LEAVES,leavesDrops(ModBlocks.ICE_ETHER_LEAVES,ModBlocks.ICE_ETHER_TREE_SAPLING,0.0025f));
+
+        addDrop(ModBlocks.ICE_ETHER_TREE_SAPLING);
 
         addDrop(ModBlocks.ICE_ETHER_DOOR,doorDrops(ModBlocks.ICE_ETHER_DOOR));
         addDrop(ModBlocks.ICE_ETHER_SLAB,slabDrops(ModBlocks.ICE_ETHER_SLAB));

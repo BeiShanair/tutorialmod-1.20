@@ -6,6 +6,7 @@ import com.besson.tutorialmod.block.custom.FireEtherBlock;
 import com.besson.tutorialmod.block.custom.PolishingMachine;
 import com.besson.tutorialmod.block.custom.StrawberryCropBlock;
 import com.besson.tutorialmod.sounds.ModSounds;
+import com.besson.tutorialmod.world.tree.IceEtherTreeSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -62,6 +63,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ICE_ETHER_LEAVES = registerBlocks("ice_ether_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+    public static final Block ICE_ETHER_TREE_SAPLING = registerBlocks("ice_ether_tree_sapling",
+            new SaplingBlock(new IceEtherTreeSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,name),block);
